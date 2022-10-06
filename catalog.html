@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -31,13 +32,13 @@
         <!--Пользовательское меню-->
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span class="visually-hidden">поиск</span></a>
+            <a class="navigation-user-search" href="#"><span class="visually-hidden">поиск</span></a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span class="visually-hidden">избранное</span></a>
+            <a class="navigation-user-favorites" href="#"><span class="visually-hidden">избранное</span></a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span>хочу сюда!</span></a>
+            <a class="navigation-user-enter" href="#"><span>хочу сюда!</span></a>
           </li>
         </ul>
       </nav>
@@ -48,6 +49,7 @@
 
       <!--Фильтр-->
       <section class="catalog-main">
+        <div class="catalog-filter-main">
         <header class="catalog-header">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -115,10 +117,10 @@
           </fieldset>
 
 
-          <input class="button" type="submit" value="Применить">
-          <input type="reset" value="Сбросить">
+          <input class="button button-accept" type="submit" value="Применить">
+          <input class="button button-reset" type="reset" value="Сбросить">
         </form>
-
+        </div>
         <!--Каталог-->
         <div>
           <p class="find-hotels">Найдено гостиниц: 38</p>
@@ -214,7 +216,7 @@
       </section>
 
       <!--рассылка-->
-      <section class="subscribe-main">
+      <section class="subscribe-catalog">
         <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -230,13 +232,13 @@
         <h3 class="visually-hidden">Наши социальные сети</h3>
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-link" href="https://vk.com/htmlacademy"><img src="#" alt="Вконтакте"></a>
+            <a class="footer-link" href="https://vk.com/htmlacademy"><img src="/images/social-icon-vk.svg" alt="Вконтакте"></a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="https://t.me/htmlacademy"><img src="#" alt="Телеграм"></a>
+            <a class="footer-link" href="https://t.me/htmlacademy"><img src="/images/social-icon-telegram.svg" alt="Телеграм"></a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Ютуб канал"></a>
+            <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru"><img src="/images/social-icon-youtube.svg" alt="Ютуб канал"></a>
           </li>
         </ul>
       </section>
@@ -246,7 +248,7 @@
       </section>
       <section class="footer-logo">
         <h3 class="visually-hidden">Разработчик сайта</h3>
-        <a href="https://htmlacademy.ru/"><img src="#" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/"><img src="/images/html-academy-icon.svg" alt="Логотип HTML Academy"></a>
       </section>
     </footer>
 

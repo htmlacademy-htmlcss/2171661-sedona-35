@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -30,13 +31,13 @@
         <!--Пользовательское меню-->
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span class="visually-hidden">поиск</span></a>
+            <a class="navigation-user-search" href="#"><span class="visually-hidden">поиск</span></a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span class="visually-hidden">избранное</span></a>
+            <a class="navigation-user-favorites" href="#"><span class="visually-hidden">избранное</span></a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#"><span>хочу сюда!</span></a>
+            <a class="navigation-user-enter" href="#"><span>хочу сюда!</span></a>
           </li>
         </ul>
       </nav>
@@ -44,7 +45,7 @@
 
     <!--основное содержимое-->
     <main class="main-index">
-      <div>
+      <div class="main-title-block">
         <h1 class="visually-hidden">Сайт города седона</h1>
         <img src="/images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
         <h2 class="main-title">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -111,7 +112,7 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input class="email-input" type="email" name="e-mail" placeholder="Ваш e-mail">
-          <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-button">
+          <input class="subscribe-button" type="submit" value="ПОДПИСАТЬСЯ">
         </form>
       </section>
     </main>
@@ -122,13 +123,13 @@
         <h3 class="visually-hidden">Наши социальные сети</h3>
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-link" href="https://vk.com/htmlacademy"><img src="#" alt="Вконтакте"></a>
+            <a class="footer-link" href="https://vk.com/htmlacademy"><img src="/images/social-icon-vk.svg" alt="Вконтакте"></a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="https://t.me/htmlacademy"><img src="#" alt="Телеграм"></a>
+            <a class="footer-link" href="https://t.me/htmlacademy"><img src="/images/social-icon-telegram.svg" alt="Телеграм"></a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Ютуб канал"></a>
+            <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru"><img src="/images/social-icon-youtube.svg" alt="Ютуб канал"></a>
           </li>
         </ul>
       </section>
@@ -138,7 +139,7 @@
       </section>
       <section class="footer-logo">
         <h3 class="visually-hidden">Разработчик сайта</h3>
-        <a href="https://htmlacademy.ru/"><img src="#" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/"><img src="/images/html-academy-icon.svg" alt="Логотип HTML Academy"></a>
       </section>
     </footer>
 
