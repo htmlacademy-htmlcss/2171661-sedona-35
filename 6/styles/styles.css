@@ -41,6 +41,10 @@ body {
   overflow: hidden;
 }
 
+.button {
+  font-family: "PT Sans", sans-serif;
+}
+
 /* Навигация */
 
 .navigation {
@@ -84,7 +88,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 16px;
   gap: 8px;
 }
 
@@ -92,6 +95,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding: 20px 16px;
   text-decoration: none;
   color: #000000;
 }
@@ -115,11 +119,27 @@ body {
 .navigation-user-search {
   background-image: url(../images/user-menu-icon-search.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 0 0 1px;
+  gap: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation-user-favorites {
   background-image: url(../images/user-menu-icon-like.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 0 0 1px;
+  gap: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation-user-enter {
@@ -129,6 +149,8 @@ body {
   align-items: center;
   padding: 8px 50px;
   gap: 10px;
+  width: 92px;
+  height: 20px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -156,6 +178,7 @@ body {
 .main-title-logo {
   display: block;
   margin: 0 auto;
+  padding-top: 51.4px;
 }
 
 .main-title-background {
@@ -171,6 +194,10 @@ body {
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-title-background {
+  padding-top: 25px;
 }
 
 .main-title-text {
@@ -336,8 +363,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  width: 684px;
-  height: 52px;
 }
 
 .email-input {
@@ -352,7 +377,7 @@ body {
 }
 
 .subscribe-button {
-  width: 232px;
+  min-width: 232px;
   height: 52px;
   font-size: 20px;
   line-height: 36px;
@@ -399,31 +424,17 @@ body {
   margin-right: 236.5px;
 }
 
-.footer-item-vk {
-  display: flex;
-  flex-direction: column;
+.footer-link {
+  display: grid;
   justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  gap: 10px;
+  align-content: center;
+  width: 47.33px;
+  height: 40px;
 }
 
-.footer-item-tg {
+.footer-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1px 10px;
-  gap: 10px;
-}
-
-.footer-item-yt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  gap: 10px;
+  padding: 0;
 }
 
 .footer-logo {
@@ -720,9 +731,54 @@ body {
   border-radius: 4px;
 }
 
+.sorting-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 160px;
+  height: 48px;
+}
+
+.sorting-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
 .button-cards {
   background-image: url(../images/icon-button-cards.svg);
   background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+}
+
+.button-big-cards {
+  background-image: url(../images/icon-button-big-cards.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+}
+
+.button-list {
+  background-image: url(../images/icon-button-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
 }
 
 /* Карточки отелей */
@@ -743,6 +799,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   gap: 16px;
   width: 340px;
   height: 438px;
@@ -841,9 +898,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 8px 26px;
-  gap: 10px;
-  width: 140px;
-  height: 36px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -860,9 +914,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
-  gap: 10px;
-  width: 140px;
-  height: 36px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -910,15 +961,16 @@ body {
 
 .pagination-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
   background-color: #82B3D3;
   border-radius: 4px;
 }
 
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -929,6 +981,7 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .pagination-dots {
