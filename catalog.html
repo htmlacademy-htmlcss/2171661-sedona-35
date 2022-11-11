@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <div class="page-container">
-      <!--Шапка сайта-->
       <header class="main-header">
-
-        <!--Навигация-->
         <nav class="navigation">
           <a class="sedona-logo-container" href="index.html">
             <img class="sedona-logo" src="./images/logo.svg" alt="Логотип сайта городка Седона">
@@ -28,8 +23,6 @@
               <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-
-          <!--Пользовательское меню-->
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-search" href="#"><span class="visually-hidden">поиск</span></a>
@@ -45,11 +38,7 @@
           </ul>
         </nav>
       </header>
-
-      <!--основное содержимое-->
       <main class="main-catalog main-container">
-
-        <!--Фильтр-->
         <section class="catalog-main">
           <div class="catalog-filter-container">
             <div class="catalog-filter-main">
@@ -78,7 +67,6 @@
                   </li>
                 </ul>
               </header>
-
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="catalog-filter-left">
                   <fieldset class="catalog-filter-group catalog-filter-infrastructure">
@@ -86,20 +74,23 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="Бассейн" checked>
-                          Бассейн
+                          <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="Парковка" checked>
-                          Парковка
+                          <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="Wi-Fi">
-                          Wi-Fi
+                          <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -109,20 +100,25 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="Тип жилья" value="Гостиница" checked>
-                          Гостиница
+                          <input class="visually-hidden control-input" type="radio" name="Тип жилья" value="Гостиница"
+                            checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="Тип жилья" value="Мотель">
-                          Мотель
+                          <input class="visually-hidden control-input" type="radio" name="Тип жилья" value="Мотель">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="Тип жилья" value="Аппартаменты">
-                          Аппартаменты
+                          <input class="visually-hidden control-input" type="radio" name="Тип жилья"
+                            value="Аппартаменты">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Аппартаменты</span>
                         </label>
                       </li>
                     </ul>
@@ -135,23 +131,27 @@
                     </div>
                     <div class="range-slider">
                       <div class="filter-price-container">
-                        <input class="catalog-price-from" type="number" value="0" placeholder="От">
-                        <input class="catalog-price-before" type="number" value="9000" placeholder="До">
+                        <label class="price-item-label price-item-left">
+                          <input class="catalog-price-input catalog-price-from" type="number" value="0">от
+                        </label>
+                        <label class="price-item-label price-item-right">
+                          <input class="catalog-price-input catalog-price-before" type="number" value="9000">до
+                        </label>
                       </div>
+
                       <div class="range">
                         <div class="range-scale">
                           <div class="range-bar">
-                            <button class="range-toggle toggle-min">
+                            <button class="range-toggle toggle-min" type="button">
                               <span class="visually-hidden">Изменить минимальную цену.</span>
                             </button>
-                            <button class="range-toggle toggle-max">
+                            <button class="range-toggle toggle-max" type="button">
                               <span class="visually-hidden">Изменить максимальную цену.</span>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!--разметить ползунок с диапазоном цен-->
                   </fieldset>
                   <div class="catalog-filter-buttons">
                     <input class="button button-accept button-blue" type="submit" value="Применить">
@@ -161,7 +161,6 @@
               </form>
             </div>
           </div>
-          <!--Каталог-->
           <div class="catalog-list-container">
             <div class="hotel-list-header">
               <div class="find-hotels-title">
@@ -210,7 +209,7 @@
                 </div>
                 <div class="hotel-card-rating">
                   <div class="hotel-card-stars">
-                    <img class="stars-icon" src="#" alt="">
+                    <div class="stars four-stars"></div>
                   </div>
                   <div class="hotel-rating-area">
                     <p class="hotel-rating">Рейтинг: 8,5</p>
@@ -235,7 +234,7 @@
                 </div>
                 <div class="hotel-card-rating">
                   <div class="hotel-card-stars">
-                    <img class="stars-icon" src="#" alt="">
+                    <div class="stars four-stars"></div>
                   </div>
                   <div class="hotel-rating-area">
                     <p class="hotel-rating">Рейтинг: 9,2</p>
@@ -259,7 +258,7 @@
                 </div>
                 <div class="hotel-card-rating">
                   <div class="hotel-card-stars">
-                    <img class="stars-icon" src="#" alt="">
+                    <div class="stars three-stars"></div>
                   </div>
                   <div class="hotel-rating-area">
                     <p class="hotel-rating">Рейтинг: 6,9</p>
@@ -283,7 +282,7 @@
                 </div>
                 <div class="hotel-card-rating">
                   <div class="hotel-card-stars">
-                    <img class="stars-icon" src="#" alt="">
+                    <div class="stars two-stars"></div>
                   </div>
                   <div class="hotel-rating-area">
                     <p class="hotel-rating">Рейтинг: 5,0</p>
@@ -291,7 +290,6 @@
                 </div>
               </li>
             </ul>
-
             <div class="divider"></div>
 
             <!--Пагинация-->
@@ -318,9 +316,6 @@
               </ul>
             </div>
           </div>
-
-
-
         </section>
 
         <!--рассылка-->
@@ -382,5 +377,4 @@
       </footer>
     </div>
   </body>
-
 </html>

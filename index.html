@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <div class="page-container">
+
       <!--Шапка сайта-->
       <header class="main-header">
-
 
         <!--Навигация-->
         <nav class="navigation">
@@ -50,7 +48,6 @@
 
       <!--основное содержимое-->
       <main class="main-index main-container">
-
         <div class="main-title-block">
           <h1 class="visually-hidden">Сайт города седона</h1>
           <img class="main-title-logo" src="./images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
@@ -166,7 +163,6 @@
                 <p class="advantages-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
               </div>
             </li>
-
           </ul>
         </section>
 
@@ -238,7 +234,99 @@
           </section>
         </div>
       </footer>
+
+      <!--Модальное окно-->
+      <div class="modal-container modal-close">
+        <div class="modal-travel">
+          <button class="modal-close-button button-border" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+                fill="black" />
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="form" action="htpps://echo.htmlacademy.ru/" method="post">
+              <p class="field-group field-text">
+                <span class="visually-hidden">Дата Заезда</span>
+                <label class="modal-arrive">Дата Заезда:</label>
+                <span class="calendar">
+                  <input class="modal-date" type="text" name="check-in" placeholder="Укажите дату"
+                    value="27 апреля 2020" required>
+                  <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+                </span>
+              </p>
+              <p class="field-group field-text">
+                <span class="visually-hidden">Дата Выезда:</span>
+                <label class="modal-leave">Дата Выезда:</label>
+                <span class="calendar"></span>
+                <input class="modal-date" type="text" name="check-out" placeholder="Укажите дату"
+                  value="1 сентября 2023" required>
+                <span class="modal-available">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <p class="field-group field-count">
+                <label class="field-people" for="adult">Взрослые:</label>
+                <span class="field-group field-number">
+                  <button class="button minus" type="button" id="adult">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg class="minus-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                      viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"></path>
+                    </svg>
+                  </button>
+                  <input class="modal-input" type="number" name="adults" value="2" required>
+                  <button class="button plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                      viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"></path>
+                    </svg>
+                  </button>
+                </span>
+              </p>
+              <p class="field-group field-count-kids">
+                <label class="field-people" for="kids">Дети:
+                  <span class="tooltip" tabindex="0">
+                    <button class="tooltip-info" type="button" id="kids">
+                      <svg class=tooltip-icon width="26" height="26" viewBox="0 0 26 26"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83b3d3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </label>
+                <span class="field-group field-number">
+                  <button class="button minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg class="minus-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                      viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"></path>
+                    </svg>
+                  </button>
+                  <input class="modal-input" type="number" name="adults" value="2" required>
+                  <button class="button plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14"
+                      viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"></path>
+                    </svg>
+                  </button>
+                </span>
+              </p>
+              <button class="find" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
-
 </html>
