@@ -109,9 +109,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  padding: 20px 16px;
+  padding: 20px 0;
   text-decoration: none;
   color: #000000;
+  margin: 0 16px;
 }
 
 .navigation-link-current::after {
@@ -590,13 +591,12 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 0;
   gap: 10px;
-  width: 114px;
-  height: 21px;
   list-style-type: none;
   margin: 0;
 }
@@ -624,14 +624,13 @@ body {
   background-position: center;
   width: 8px;
   height: 20px;
-  /*не уверен что этот элемент надо делать именно так, тк картинка не может менять состояния при наведении*/
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1763,6 +1762,7 @@ body {
 
 .tooltip {
   position: absolute;
+  right: 166px;
   margin-top: 10px;
   margin-left: 10px;
   width: 26px;
