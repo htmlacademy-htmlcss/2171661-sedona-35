@@ -50,15 +50,18 @@
 
       <!--основное содержимое-->
       <main class="main-index main-container">
-        <div class="main-title-block">
-          <h1 class="visually-hidden">Сайт города седона</h1>
-          <img class="main-title-logo" src="./images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
-          <img class="main-title-background" src="./images/background-main-title.svg" width="1200" height="57" alt="">
+        <div class="hero">
+          <div class="main-title-block">
+            <h1 class="visually-hidden">Сайт города седона</h1>
+            <img class="main-title-logo" src="./images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
+            <!--<img class="main-title-background" src="./images/background-main-title.svg" width="1200" height="57" alt="">-->
+          </div>
           <div class="main-title-text">
-            <h2 class="main-title">седона - небольшой городок в аризоне,<br>заслуживающий большего!</h2>
-            <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <h2 class="main-title">седона &mdash; небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+            <p class="main-title-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
         </div>
+
 
         <!--Преимущества-->
         <section class="advantages">
@@ -150,8 +153,8 @@
                 <h3 class="advantages-title">ЕДА</h3>
                 <p class="advantages-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                   разочаруетесь!
+                </p>
               </div>
-              </p>
             </li>
             <li class="advantages-item background-light-grey">
               <div class="advantages-text">
@@ -172,7 +175,7 @@
         <section class="search-hotel">
           <div class="search-hotel-box">
             <div class="search-hotel-text">
-              <h2 class="search-hotel-title">ЗАИНТЕРЕСОВАЛИСЬ ?</h2>
+              <h2 class="search-hotel-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
               <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             </div>
             <a class="search-hotel-button button-brown" href="#"><span>поиск гостиницы в седоне</span></a>
@@ -253,22 +256,22 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="form" action="htpps://echo.htmlacademy.ru/" method="post">
               <p class="field-group field-text">
-                <label class="modal-arrive">Дата Заезда:</label>
+                <label class="modal-arrive" for="arrive-input">Дата Заезда:</label>
                 <span class="calendar">
-                  <input class="modal-date" type="text" name="check-in" placeholder="Укажите дату"
+                  <input class="modal-date" type="text" id="arrive-input" name="arrive" placeholder="Укажите дату"
                     value="27 апреля 2020" required>
                   <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
                 </span>
               </p>
               <p class="field-group field-text">
-                <label class="modal-leave">Дата Выезда:</label>
+                <label class="modal-leave" for="leave-input">Дата Выезда:</label>
                 <span class="calendar"></span>
-                <input class="modal-date" type="text" name="check-out" placeholder="Укажите дату"
+                <input class="modal-date" type="text" id="leave-input" name="leave" placeholder="Укажите дату"
                   value="1 сентября 2023" required>
                 <span class="modal-available">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="field-group field-count">
-                <label class="field-people">Взрослые:</label>
+                <label class="field-people" for="adults">Взрослые:</label>
                 <span class="field-group field-number">
                   <button class="button minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
@@ -277,7 +280,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"></path>
                     </svg>
                   </button>
-                  <input class="modal-input" type="number" name="adults" value="2" required>
+                  <input class="modal-input" type="number" id="adults" name="adults" value="2" required>
                   <button class="button plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                     <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14"
@@ -288,8 +291,8 @@
                 </span>
               </p>
               <p class="field-group field-count-kids">
-                <label class="field-people">Дети:</label>
-                <span class="tooltip" tabindex="0">
+                <label class="field-people" for="kids">Дети:</label>
+                <span class="tooltip">
                   <button class="tooltip-info" type="button">
                     <svg class=tooltip-icon width="26" height="26" viewBox="0 0 26 26"
                       xmlns="http://www.w3.org/2000/svg">
@@ -312,7 +315,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"></path>
                     </svg>
                   </button>
-                  <input class="modal-input" type="number" name="adults" value="2" required>
+                  <input class="modal-input" type="number" id="kids" name="kids" value="2" required>
                   <button class="button plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                     <svg class="plus-icon" aria-hidden="true" focusable="false" width="14" height="14"
