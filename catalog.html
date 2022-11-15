@@ -11,7 +11,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a class="sedona-logo-container" href="index.html">
-            <img class="sedona-logo" src="./images/logo.svg" alt="Логотип сайта городка Седона">
+            <img class="sedona-logo" src="./images/logo.svg" width="140px" height="70px" alt="Логотип сайта городка Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -55,13 +55,6 @@
                         <path d="M4.371 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                       </svg>
                     </a>
-                  </li>
-                  <li class="breadcrumbs-item breadcrumbs-link">
-                    <svg aria-hidden="true" focusable="false" width="8" height="11" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.786 4.969 2.036.719c-.25-.25-.75-.25-1.125 0s-.25.75 0 1l4.125 3.75-4 3.75c-.25.25-.25.75 0 1 0 .125.375.25.5.25s.375-.125.5-.25l4.75-4.25a.585.585 0 0 0 0-1Z" />
-                    </svg>
                   </li>
                   <li class="breadcrumbs-item breadcrumbs-icon-hotels">
                     <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -119,7 +112,7 @@
                           <input class="visually-hidden control-input" type="radio" name="Тип жилья"
                             value="Аппартаменты">
                           <span class="control-mark"></span>
-                          <span class="control-label">Аппартаменты</span>
+                          <span class="control-label">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
@@ -133,13 +126,12 @@
                     <div class="range-slider">
                       <div class="filter-price-container">
                         <label class="price-item-label price-item-left">
-                          <input class="catalog-price-input catalog-price-from" type="number" value="0">от
+                          <input class="catalog-price-input catalog-price-from" type="number" value="0"><span class="price-input-text">от</span>
                         </label>
                         <label class="price-item-label price-item-right">
-                          <input class="catalog-price-input catalog-price-before" type="number" value="9000">до
+                          <input class="catalog-price-input catalog-price-before" type="number" value="9000"><span class="price-input-text">до</span>
                         </label>
                       </div>
-
                       <div class="range">
                         <div class="range-scale">
                           <div class="range-bar">
@@ -162,6 +154,7 @@
               </form>
             </div>
           </div>
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="catalog-list-container">
             <div class="hotel-list-header">
               <div class="find-hotels-title">
@@ -174,7 +167,7 @@
                   <option value="popular">Сначала популярные</option>
                 </select>
                 <div class="sorting-buttons">
-                  <div class="sorting-button">
+                  <div class="sorting-button current-sorting-button">
                     <a href="#" class="button-cards">
                       <span class="visually-hidden">Показать карточки</span>
                     </a>
@@ -372,7 +365,7 @@
           </section>
           <section class="footer-logo">
             <h3 class="visually-hidden">Разработчик сайта</h3>
-            <a href="https://htmlacademy.ru/"><img src="./images/html-academy-icon.svg" alt="Логотип HTML Academy"></a>
+            <a href="https://htmlacademy.ru/"><img src="./images/html-academy-icon.svg" width="115px" height="33px" alt="Логотип HTML Academy"></a>
           </section>
         </div>
       </footer>
