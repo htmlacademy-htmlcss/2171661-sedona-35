@@ -377,7 +377,7 @@ body {
 
 .main-title {
   text-transform: uppercase;
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-size: 30px;
   line-height: 36px;
@@ -630,7 +630,7 @@ body {
 
 .subscribe-main p {
   text-align: center;
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -662,7 +662,7 @@ body {
   width: 452px;
   height: 52px;
   background-color: #F2F2F2;
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -1233,7 +1233,7 @@ body {
 
 .catalog-price-input {
   width: 86px;
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1247,7 +1247,7 @@ body {
 }
 
 .price-input-text {
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1462,7 +1462,7 @@ body {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -1984,7 +1984,7 @@ body {
 
 .subscribe-catalog p {
   text-align: center;
-  font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
